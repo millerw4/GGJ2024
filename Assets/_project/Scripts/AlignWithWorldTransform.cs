@@ -16,11 +16,12 @@ public class AlignWithWorldTransform : MonoBehaviour
     public Transform origin;
     public float speed = 1.0f;
     bool isMoving = false;
-
+    // private Sword sword;
 
     // Start is called before the first frame update
     void Start()
     {
+        // sword = GetComponentInParent<Sword>();
         initialPosition = transform.position;
         oldPosition = initialPosition;
         newPosition = initialPosition;
@@ -45,31 +46,26 @@ public class AlignWithWorldTransform : MonoBehaviour
         if (xVelocity > positiveThreshold)
         {
             particles.Play();
-            if (!isMoving)
-            {
-                StartCoroutine(Move(origin.position, origin.position + new Vector3(speed, 0.0f, 0.0f), speed));
-            }
+            // sword.Lunge();
+            
         } else if (xVelocity < -positiveThreshold)
         {
             particles.Play();
-            if (!isMoving)
-            {
-                StartCoroutine(Move(origin.position, origin.position - new Vector3(speed, 0.0f, 0.0f), speed));
-            }
+            // sword.Pull();
         }
     }
-    IEnumerator Move(Vector3 start, Vector3 destination, float speed)
-    {
-        isMoving = true;
-        float startTime = Time.time;
-        float distance = Vector3.Distance(start, destination);
-        float duration = distance / 3.0f;
-        while (Time.time - startTime < duration)
-        {
-            origin.position = Vector3.Lerp(start, destination, (Time.time - startTime) / duration);
-            yield return null;
-        }
-        origin.position = destination;
-        isMoving = false;
-    }
+    // IEnumerator Move(Vector3 start, Vector3 destination, float speed)
+    // {
+    //     isMoving = true;
+    //     float startTime = Time.time;
+    //     float distance = Vector3.Distance(start, destination);
+    //     float duration = distance / 3.0f;
+    //     while (Time.time - startTime < duration)
+    //     {
+    //         origin.position = Vector3.Lerp(start, destination, (Time.time - startTime) / duration);
+    //         yield return null;
+    //     }
+    //     origin.position = destination;
+    //     isMoving = false;
+    // }
 }
