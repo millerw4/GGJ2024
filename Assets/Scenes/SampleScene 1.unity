@@ -6618,7 +6618,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 58076141}
@@ -10084,7 +10084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668758913251958, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.7
       objectReference: {fileID: 0}
     - target: {fileID: 1984668758913251958, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10112,7 +10112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759388320319, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759388320319, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10148,7 +10148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759906836222, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759906836222, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10168,7 +10168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759991436502, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668759991436502, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10204,7 +10204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760453204319, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 44.7
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760453204319, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10224,7 +10224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760497519799, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760497519799, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10252,7 +10252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760711245992, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1984668760711245992, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10328,7 +10328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8672328332431126367, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: block.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwordCollisionEnter
+      value: SwordCollisionStart
       objectReference: {fileID: 0}
     - target: {fileID: 8672328332431126367, guid: 3d7de707e99541340a0d70df4f7d9e7c, type: 3}
       propertyPath: block.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -16967,10 +16967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vrSword: {fileID: 789458588}
   mouseSword: {fileID: 873367652}
-  vrSwordPosition: {x: 0, y: 0, z: 0}
-  mouseSwordPosition: {x: 0, y: 0, z: 0}
-  vrSwordRotation: {x: 0, y: 0, z: 0, w: 0}
-  mouseSwordRotation: {x: 0, y: 0, z: 0, w: 0}
   vrSwordPrefab: {fileID: 8675245443820313787, guid: 8655d2fe4c9e2c649895b7a8e95addaa, type: 3}
   mouseSwordPrefab: {fileID: 8675245443820313787, guid: 8655d2fe4c9e2c649895b7a8e95addaa, type: 3}
   planePrefab: {fileID: 949473664261208544, guid: e7aafccdbe4c4ea4d8c2038f5d858e84, type: 3}
@@ -18902,7 +18898,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 2.0000057, z: 0, w: -2.22877e-26}
+  m_BoundingSphereOverride: {x: 0, y: 1.166e-42, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
