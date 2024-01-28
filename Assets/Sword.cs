@@ -15,6 +15,8 @@ public class Sword : MonoBehaviour
     float xVelocity;
     public UnityEvent lunge;
     public UnityEvent pull;
+    public UnityEvent block;
+    Renderer rend;
     // public UnityEvent strike;
     // public UnityEvent strikeStart;
     // public UnityEvent strikeEnd;
@@ -23,6 +25,7 @@ public class Sword : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponentInChildren<Renderer>();
         oldPosition = transform.position;
         newPosition = transform.position;
         velocity = Vector3.zero;
@@ -51,5 +54,17 @@ public class Sword : MonoBehaviour
         newPosition = transform.position;
         velocity = newPosition - oldPosition;
         xVelocity = velocity.x;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger detected");
+        if (other.gameObject.tag == "MouseSword")
+        {
+            block.Invoke();
+        }
+    }
+    public void EndCollision()
+    {
+        Debug.Log("Collision ended");
     }
 }
