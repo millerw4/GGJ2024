@@ -7,6 +7,8 @@ TagManager:
   - Anchor
   - VRSword
   - MouseSword
+  - Target
+  - Sword
   layers:
   - Default
   - TransparentFX
